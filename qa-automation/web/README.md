@@ -8,19 +8,21 @@
 
 > git clone https://github.com/luisasauerbronn16/estrategia_concursos.git
 
-<p>2- Install bundler </p>
+<p>2- Verify the installed version of Ruby(2.6.1)  </p>
+
+<p>3- Install bundler </p>
 
 > gem install bundler
 
-<p>3- Access the project folder</p>
+<p>4- Access the project folder</p>
 
 > cd /estrategia_concursos/qa-automation/web/
 
-<p>4- Install the dependencies </p>
+<p>5- Install the dependencies </p>
 
 >bundle install
 
-<p>5. Install Chrome Driver </p>
+<p>6- Install Chrome Driver </p>
 
 
 ### Steps to run the test
