@@ -18,7 +18,7 @@ Navegador: Chrome 81
 Ambiente: Produção
 
 [BUG-02]
-Descrição: Botão de relizar busca não funciona quando a tela não está maximizada
+Descrição: Botão de realizar busca não funciona quando a tela não está maximizada
 
 Passos:
 1.Abrir o browser e deixar a exibição da tela pequena
@@ -37,20 +37,20 @@ Navegador: Chrome 81
 Ambiente: Produção
 
 [BUG-03]
-Descrição: Quantidade divergente de cursos exibidos no ícone na página de Cursos e na página de Cursos por Categoria
+Descrição: Quantidade divergente de cursos exibidos no ícone da página de Cursos e da página de Cursos por Categoria
 
 Passos:
 1.Acessar o site Estratégia Concursos
 2.Clicar no filtro 'VER TODOS'
 3.Verificar a quantidade de cursos exibidos para o professor Gustavo Terra (0)
-4.Clicar no professor Gustavo Terra
+4.Clicar em professor Gustavo Terra
 5.Verificar a quantidade de cursos exibida no ícone de cursos disponíveis (18)
 
 Resultado Obtido:
-A quantidade de cursos diponíveis exibida é divergente entre as telas.
+A quantidade de cursos disponíveis exibida é divergente entre as telas.
 
 Resultado Esperado:
-A quantidade de cursos diponíveis deve ser igual em todas as telas.
+A quantidade de cursos disponíveis deve ser igual em todas as telas.
 
 Navegador: Chrome 81
 
