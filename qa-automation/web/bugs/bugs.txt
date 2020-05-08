@@ -1,0 +1,57 @@
+
+[BUG-01]
+Descrição: Ação do botão 'Ver Todos' na tela de Cursos não lista todas as opções
+
+Passos:
+1.Acessar o site Estratégia Concursos
+2.Clicar no filtro 'VER TODOS'
+3.Clicar no botão 'VER TODOS' de qualquer uma das categorias
+
+Resultado Obtido:
+É exibido o topo da página de Cursos e não são exibidas todas as opções.
+
+Resultado Esperado:
+A página deve exibir todas as opções da categoria selecionada.
+
+Navegador: Chrome 81
+
+Ambiente: Produção
+
+[BUG-02]
+Descrição: Botão de relizar busca não funciona quando a tela não está maximizada
+
+Passos:
+1.Abrir o browser e deixar a exibição da tela pequena
+2.Acessar o site Estratégia Concursos
+3.Preencher o campo de busca
+4.Clicar no botão da lupa
+
+Resultado Obtido:
+A busca não é realizada.
+
+Resultado Esperado:
+A página deve exibir o resultado da busca.
+
+Navegador: Chrome 81
+
+Ambiente: Produção
+
+[BUG-03]
+Descrição: Quantidade divergente de cursos exibidos no ícone na página de Cursos e na página de Cursos por Categoria
+
+Passos:
+1.Acessar o site Estratégia Concursos
+2.Clicar no filtro 'VER TODOS'
+3.Verificar a quantidade de cursos exibidos para o professor Gustavo Terra (0)
+4.Clicar no professor Gustavo Terra
+5.Verificar a quantidade de cursos exibida no ícone de cursos disponíveis (18)
+
+Resultado Obtido:
+A quantidade de cursos diponíveis exibida é divergente entre as telas.
+
+Resultado Esperado:
+A quantidade de cursos diponíveis deve ser igual em todas as telas.
+
+Navegador: Chrome 81
+
+Ambiente: Produção

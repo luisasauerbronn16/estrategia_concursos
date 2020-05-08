@@ -1,0 +1,381 @@
+[
+  {
+    "uri": "features/specs/courses_search.feature",
+    "id": "busca,-filtragem-e-visualização-de-detalhe-de-cursos",
+    "keyword": "Funcionalidade",
+    "name": "Busca, filtragem e visualização de detalhe de cursos",
+    "description": "    Sendo um usuário interessado em cursos disponíveis pela Estratégia Concursos\n    Quero realizar buscas por cursos, concursos, professores, matérias e regiões\n    Para visualizar os detalhes dos cursos disponíveis",
+    "line": 4,
+    "tags": [
+      {
+        "name": "@courses_search",
+        "line": 3
+      }
+    ],
+    "elements": [
+      {
+        "id": "busca,-filtragem-e-visualização-de-detalhe-de-cursos;buscar-curso-válido",
+        "keyword": "Cenário",
+        "name": "Buscar curso válido",
+        "description": "",
+        "line": 10,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@courses_search",
+            "line": 3
+          },
+          {
+            "name": "@test",
+            "line": 9
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.32.1/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 46000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.32.1/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30000
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que estou na home da Estratégia Concursos",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/courses_search.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19993509000
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "realizo uma busca por 'policia militar'",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/courses_search.rb:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2600972000
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "vejo as assinaturas, pacotes e cursos disponíveis para compra",
+            "line": 13,
+            "match": {
+              "location": "features/step_definitions/courses_search.rb:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 127667000
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "seleciono o curso 'Legislação da Polícia Militar p/ PM-PI (Oficial) - 2020'",
+            "line": 14,
+            "match": {
+              "location": "features/step_definitions/courses_search.rb:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4702020000
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "vejo os detalhes do curso selecionado",
+            "line": 15,
+            "match": {
+              "location": "features/step_definitions/courses_search.rb:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 107734000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2004126000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.32.1/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 166627000
+            }
+          }
+        ]
+      },
+      {
+        "id": "busca,-filtragem-e-visualização-de-detalhe-de-cursos;buscar-curso-inválido",
+        "keyword": "Cenário",
+        "name": "Buscar curso inválido",
+        "description": "",
+        "line": 18,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@courses_search",
+            "line": 3
+          },
+          {
+            "name": "@test",
+            "line": 17
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.32.1/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.32.1/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20000
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5060000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que estou na home da Estratégia Concursos",
+            "line": 19,
+            "match": {
+              "location": "features/step_definitions/courses_search.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7959595000
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "realizo uma busca por 'culinária'",
+            "line": 20,
+            "match": {
+              "location": "features/step_definitions/courses_search.rb:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2631933000
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "vejo a mensagem 'Encontramos 0 resultados pela busca \"culinária\"'",
+            "line": 21,
+            "match": {
+              "location": "features/step_definitions/courses_search.rb:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29044000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000764000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.32.1/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 138457000
+            }
+          }
+        ]
+      },
+      {
+        "id": "busca,-filtragem-e-visualização-de-detalhe-de-cursos;realizar-busca-de-curso-filtrado-por-professor",
+        "keyword": "Cenário",
+        "name": "Realizar busca de curso filtrado por professor",
+        "description": "",
+        "line": 36,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@courses_search",
+            "line": 3
+          },
+          {
+            "name": "@test",
+            "line": 35
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.32.1/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.32.1/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28000
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que estou na home da Estratégia Concursos",
+            "line": 37,
+            "match": {
+              "location": "features/step_definitions/courses_search.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3315554000
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "realizo uma busca com o filtro 'Por professor'",
+            "line": 38,
+            "match": {
+              "location": "features/step_definitions/courses_search.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1884856000
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "clico no professor 'Ena Loiola'",
+            "line": 39,
+            "match": {
+              "location": "features/step_definitions/courses_search.rb:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5022637000
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "clico no curso 'Inglês p/ CBM-SE (Oficial) Com Videoaulas - 2020'",
+            "line": 40,
+            "match": {
+              "location": "features/step_definitions/courses_search.rb:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3781983000
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "vejo os detalhes do curso selecionado",
+            "line": 41,
+            "match": {
+              "location": "features/step_definitions/courses_search.rb:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 81701000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2002027000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.32.1/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 162067000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
